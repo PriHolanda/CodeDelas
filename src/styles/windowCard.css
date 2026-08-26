@@ -1,0 +1,47 @@
+.window-card {
+  background-color: #ffffff;
+  border: 2.5px solid #111111;
+  border-radius: 16px;
+  box-shadow: 5px 5px 0px #111111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.window-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 2.5px solid #111111;
+}
+
+.window-card-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.window-card-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.45);
+  display: inline-block;
+}
+
+.window-card-title {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.window-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
