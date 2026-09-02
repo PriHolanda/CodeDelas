@@ -15,16 +15,15 @@ function Header() {
                         <li><a href="#hero">Início</a></li>
                         <li><a href="#about">O Projeto</a></li>
                         <li><a href="#journey">Como funciona</a></li>
-                        <li><a href="#">Temas</a></li>
-                        <li><a href="#">Encontros</a></li>
-                        <li><a href="#">Projeto Final</a></li>
-                        <li><a href="#">Faq</a></li>
+                        <li><a href="#themes">Temas</a></li>
+                        <li><a href="#final-project">Projeto Final</a></li>
+                        <li><a href="#faq">Faq</a></li>
                     </ul>
                 </div>
-                
-                    <a className="header-button" href="" target="_blank" rel="noreferrer">
-                        Quero me inscrever
-                    </a>
+
+                <a className="header-button" href="" target="_blank" rel="noreferrer">
+                    Quero me inscrever
+                </a>
             </div>
         </header>
     )

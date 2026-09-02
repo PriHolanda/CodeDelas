@@ -1,0 +1,97 @@
+.themes {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 45px;
+    border-bottom: 2.5px solid #111111;
+}
+
+.themes-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.themes-subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff007b;
+    letter-spacing: 5px;
+}
+
+.themes-title {
+    font-family: 'Bungee', sans-serif;
+    font-size: 36px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.theme-button {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #661e9d;
+    color: #ffffff;
+    border: 2px solid #111;
+    border-radius: 50px;
+    text-decoration: none;
+    gap: 5px;
+    height: 36px;
+}
+
+.theme-button:hover {
+    background-color: #ff007b;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #111;
+}
+
+.themes-container {
+    display: flex;
+    gap: 20px;
+}
+
+.themes-window-card{
+    line-height: 1.5;
+}
+
+.theme-card-title{
+    font-family: 'Bungee', sans-serif;
+    font-size: 18px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.theme-card-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.theme-card-list{
+    list-style: none;
+    font-size: 14px;
+    color: #555555;
+    border-top: 2px solid #111111;
+    padding-top: 16px;
+}
+
+
+.theme-card-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+.theme-card-item i {
+    color: #ff007b;
+    margin-right: 8px;
+}
