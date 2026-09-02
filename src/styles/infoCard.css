@@ -1,0 +1,10 @@
+.info-card {
+    background-color: #ffffff;
+    border: 2.5px solid #111111;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #111111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

@@ -39,20 +39,19 @@ header {
 .header-buttons {
     display: flex;
     align-items: center;
-    gap: 24px;
 }
 
 .header-menu {
     display: flex;
-    gap: 13px;
+    gap: 23px;
     list-style: none;
 }
 
 .header-menu li a {
     text-decoration: none;
     color: #0c0b1a;
-    font-size: 13px;
-    font-family: "Fredoka", sans-serif;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 

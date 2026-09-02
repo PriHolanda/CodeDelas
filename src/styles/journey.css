@@ -1,0 +1,73 @@
+.journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 45px;
+    border-bottom: 2.5px solid #111111;
+    background-color: #ffdbec;
+}
+
+.journey-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.journey-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff007b;
+    letter-spacing: 5px;
+}
+
+.journey-heading {
+    font-family: 'Bungee', sans-serif;
+    font-size: 36px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.journey-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #605a6c;
+    text-align: center;
+    padding: 0 112px;
+}
+
+.journey-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.journey-info-card{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-card-number {
+    color: #ff007b;
+    font-family: 'Bungee', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.info-card-title {
+    color: #661e9d;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+}
+
+.info-card-description {
+    color: #605a6c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+

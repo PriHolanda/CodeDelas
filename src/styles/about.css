@@ -1,0 +1,99 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 45px;
+    border-bottom: 2.5px solid #111111;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 224px;
+    gap: 15px;
+}
+
+.about-title{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff007b;
+    letter-spacing: 5px;
+}
+
+.about-heading{
+    font-family: 'Bungee', sans-serif;
+    font-size: 40px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.about-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #605a6c;
+    text-align: center;
+    padding: 0 112px;
+}
+
+.about-container{
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.about-window-card{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 400px;
+}
+
+.about-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 28px;
+    gap: 15px;
+}
+
+.about-card-content p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #605a6c;
+    text-align: justify;
+}
+
+.about-icon-happy{
+    height: 100px;
+    margin-top: 20px;
+}
+
+.info-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-info-card {
+    padding: 24px;
+}
+
+.info-card-container h1{
+    font-family: 'Bungee', sans-serif;
+    font-size: 20px;
+    color: #ff007b;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.info-card-container p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #605a6c;
+    text-align: justify;
+    margin-top: 5px;
+}

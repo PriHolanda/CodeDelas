@@ -3,7 +3,6 @@
   min-height: 100vh;
   background-color: #431358;
   background-image:
-    /* 1. Brilho rosa forte no canto inferior direito */
     radial-gradient(circle at 100% 100%,
       rgba(219, 0, 120, 0.85) 0%,
       rgba(219, 0, 120, 0.35) 25%,
@@ -21,6 +20,7 @@
   align-items: center;
   justify-content: center;
   padding: 96px 45px 0;
+  border-bottom: 2.5px solid #111111;
 }
 
 .hero-content {
@@ -39,7 +39,7 @@
 
 .hero-heading {
   color: #faf5e6;
-  font-size: 60px;
+  font-size: 72px;
   font-family: "Bungee", sans-serif;
   font-weight: 800;
   text-shadow: 3px 3px 0px #0c0b1a;
