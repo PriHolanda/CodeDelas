@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Journey from './sections/Journey'
 import Themes from './sections/Themes'
+import FinalProject from './sections/Final_Project'
 import './index.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <About />   
         <Journey />   
         <Themes />   
+        <FinalProject />   
     </>
   )
 }

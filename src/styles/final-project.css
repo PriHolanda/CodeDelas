@@ -1,0 +1,101 @@
+.final-project {
+    display: flex;
+    align-items: center;
+    padding: 80px 45px;
+    border-bottom: 2.5px solid #111111;
+    background-color: #ffdbec;
+    gap: 40px;
+}
+
+.final-project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.final-project-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff007b;
+    letter-spacing: 5px;
+}
+
+.final-project-heading {
+    font-family: 'Bungee', sans-serif;
+    font-size: 36px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.final-project-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #605a6c;
+    text-align: justify;
+}  
+
+.final-project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.final-project-info-card{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.final-project-info-card i {
+    color: #ff007b;
+}
+
+
+.final-project-window-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: rotate(-2deg);
+}
+
+.final-project-card-title{
+    font-family: 'Bungee', sans-serif;
+    font-size: 14px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.item-final-project-card{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.number-card{
+    background-color: #ff007b;
+    color: #ffffff;
+    font-family: 'Bungee', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    border: #111111 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-card {
+    color: #661e9d;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+}
+
+.final-project-image{
+    width: 227px;
+    margin: 0 130px;
+}
