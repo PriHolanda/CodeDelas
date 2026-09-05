@@ -4,6 +4,7 @@ import About from './sections/About'
 import Journey from './sections/Journey'
 import Themes from './sections/Themes'
 import FinalProject from './sections/Final_Project'
+import Winners from './sections/Winners'
 import './index.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Journey />   
         <Themes />   
         <FinalProject />   
+        <Winners />   
     </>
   )
 }

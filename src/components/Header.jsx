@@ -17,6 +17,7 @@ function Header() {
                         <li><a href="#journey">Como funciona</a></li>
                         <li><a href="#themes">Temas</a></li>
                         <li><a href="#final-project">Projeto Final</a></li>
+                        <li><a href="#winners">Vencedoras</a></li>
                         <li><a href="#faq">Faq</a></li>
                     </ul>
                 </div>
