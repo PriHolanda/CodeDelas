@@ -5,6 +5,10 @@ import Journey from './sections/Journey'
 import Themes from './sections/Themes'
 import FinalProject from './sections/Final_Project'
 import Winners from './sections/Winners'
+import Organizers from './sections/Organizers'
+import Sponsors from './sections/Sponsors'
+import Participate from './sections/Participate'
+import Footer from './components/Footer'
 import './index.css'
 
 function App() {
@@ -18,6 +22,10 @@ function App() {
         <Themes />   
         <FinalProject />   
         <Winners />   
+        <Organizers />   
+        <Sponsors />   
+        <Participate />   
+        <Footer />   
     </>
   )
 }

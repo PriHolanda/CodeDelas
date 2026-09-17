@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+
+.footer-name {
+    color: #e8106c;
+    font-size: 19px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 800;
+}
+
+
+.footer-copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #999;
+
+}
+
+.footer-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #e8106c;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer-button:hover{
+    color: #661e9d;
+
+}
+
+.footer-button i {}

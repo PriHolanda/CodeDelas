@@ -1,0 +1,51 @@
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 45px;
+    border-bottom: 2.5px solid #111111;
+    background-color: #ffdbec;
+    gap: 40px;
+}
+
+.sponsors-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsors-title{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff007b;
+    letter-spacing: 5px;
+}
+
+.sponsors-heading {
+    font-family: 'Bungee', sans-serif;
+    font-size: 40px;
+    color: #661e9d;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.sponsors-container {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsors-card {
+    padding: 11px;
+}
+
+.sponsors-logo {
+    width: 200px;
+    height: auto;;
+}
