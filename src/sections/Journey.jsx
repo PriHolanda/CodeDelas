@@ -19,14 +19,14 @@ function Journey() {
 
                 <InfoCard className="journey-info-card" >
                     <h1 className="info-card-number">02</h1>
-                    <h3 className="info-card-title">Conteúdos em vídeo</h3>
-                    <p className="info-card-description">Após cada encontro ao vivo, você recebe os vídeos das aulas para assistir no seu próprio ritmo.</p>
+                    <h3 className="info-card-title">Aprendizado</h3>
+                    <p className="info-card-description">Você recebe os vídeos de cada encontro e assiste no seu próprio ritmo, quantas vezes quiser</p>
                 </InfoCard>
 
                 <InfoCard className="journey-info-card" >
                     <h1 className="info-card-number">03</h1>
-                    <h3 className="info-card-title">Aprendizado</h3>
-                    <p className="info-card-description">Assista aos vídeos das convidadas no seu ritmo, quantas vezes quiser.</p>
+                    <h3 className="info-card-title">Ferramentas do dia a dia</h3>
+                    <p className="info-card-description">Ao longo do programa, você organiza as tarefas da equipe e prototipa suas ideias com ferramentas simples.</p>
                 </InfoCard>
 
                 <InfoCard className="journey-info-card" >
@@ -42,8 +42,6 @@ function Journey() {
                 </InfoCard>
 
             </div>
-
-
         </section>
     )
 }

@@ -18,11 +18,10 @@ function Header() {
                         <li><a href="#themes">Temas</a></li>
                         <li><a href="#final-project">Projeto Final</a></li>
                         <li><a href="#winners">Vencedoras</a></li>
-                        <li><a href="#faq">Faq</a></li>
                     </ul>
                 </div>
 
-                <a className="header-button" href="" target="_blank" rel="noreferrer">
+                <a className="header-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeQVCr-MbK8wlQRwILFza1Kqg7KNrivA836qImcWdqIUFp-5g/viewform?usp=sharing&ouid=110802464428585688094" target="_blank" rel="noreferrer">
                     Quero me inscrever
                 </a>
             </div>

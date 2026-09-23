@@ -15,8 +15,8 @@ function About() {
             <div className="about-container">
                 <WindowCard title='sobre.txt' className='about-window-card' >
                     <div className="about-card-content">
-                        <p>O programa acontece de forma 100% online e gratuita, com encontros ao vivo com profissionais que atuam na área. Cada encontro foca em um tema diferente da tecnologia, com aulas práticas e conteúdos que você pode acessar depois.</p>
-                        <p>No final, você cria e apresenta um projeto real — algo que você construiu com o que aprendeu, do zero.</p>
+                        <p>O programa acontece de forma 100% online e gratuita, com conteúdos disponiblizados por profissionais que atuam na área. Cada encontro foca em um tema diferente da tecnologia, com aulas práticas e ferramentas que você pode acessar a qualquer momento.</p>
+                        <p>No final, você cria e apresenta um projeto real, algo que você construiu com o que aprendeu, do zero.</p>
 
                         <img src={IconHappy} alt="Mascote feliz" className="about-icon-happy" />
                     </div>
@@ -25,12 +25,12 @@ function About() {
                 <div className="info-card-container">
                     <InfoCard className="about-info-card" >
                         <h1>Conhecimento</h1>
-                        <p>Ensinar fundamentos reais de tecnologia com profissionais da área</p>
+                        <p>Ensinar fundamentos reais de tecnologia com profissionais da área.</p>
                     </InfoCard>
 
                      <InfoCard className="about-info-card" >
                         <h1>Representatividade</h1>
-                        <p>Mulheres reais contanto como chegaram onde estão.</p>
+                        <p>Mulheres reais contando como chegaram onde estão.</p>
                     </InfoCard>
 
                      <InfoCard className="about-info-card" >

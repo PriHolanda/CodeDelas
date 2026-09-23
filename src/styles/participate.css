@@ -1,22 +1,24 @@
-.participate{
+.participate {
     background-color: #44006e;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 112px;
+    padding: 112px 45px;
     border-bottom: 2.5px solid #111111;
 }
 
-.participate-content{
+.participate-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    max-width: 980px;
+    width: 100%;
 }
 
-.participate-heading{
+.participate-heading {
     font-family: 'Bungee', sans-serif;
-    font-size: 60px;
+    font-size: clamp(40px, 7vw, 60px);
     color: #faf5e6;
     text-transform: uppercase;
     font-weight: 900;
@@ -26,12 +28,13 @@
     margin-bottom: 24px;
 }
 
-.participate-description{
+.participate-description {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 48px 16px;
+    margin: 0 0 16px;
     color: #ffffff85;
     text-align: center;
+    line-height: 1.6;
 }
 
 .participate-button {
@@ -39,41 +42,72 @@
     align-items: center;
     justify-content: center;
     padding: 16px 40px;
-    border: 3px solid #ffffff;
+    border: 3px solid #1b1024;
     border-radius: 30px;
-    background: #e8106c;
-    color: white;
+    background: #ff007b;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: #ffffff4d 5px 5px 0px;
+    box-shadow: 4px 4px 0 #1b1024;
     cursor: pointer;
     margin-top: 20px;
+    transition: transform 0.4s ease;
+    text-align: center;
 }
 
-.participate-social{
+.participate-button:hover {
+    transform: scale(1.03);
+}
+
+.participate-social {
     display: flex;
-    gap: 15px;   
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-top: 48px;
     border-top: #ffffff3d 1px solid;
-    padding: 32px 100px;
+    padding: 32px 0;
+    width: min(100%, 760px);
 }
 
-.participate-title{
+.participate-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #ffffff85;
 }
 
-.participate-media{
-     font-family: 'Montserrat', sans-serif;
+.participate-media {
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #ffffff85;
     font-weight: 600;
     text-decoration: none;
 }
 
-.participate-icon{
-    width: 200px;
+.participate-icon {
+    width: min(200px, 70vw);
+}
+
+@media (max-width: 640px) {
+  .participate {
+    padding: 72px 18px;
+  }
+
+  .participate-description br {
+    display: none;
+  }
+
+  .participate-button {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 14px;
+    border-radius: 18px;
+  }
+
+  .participate-title,
+  .participate-media {
+    font-size: 15px;
+  }
 }

@@ -10,6 +10,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    gap: 24px;
+    width: 100%;
+    max-width: 1180px;
+    align-self: center;
 }
 
 .themes-subtitle {
@@ -22,7 +26,7 @@
 
 .themes-title {
     font-family: 'Bungee', sans-serif;
-    font-size: 36px;
+    font-size: clamp(32px, 4vw, 36px);
     color: #661e9d;
     text-transform: uppercase;
     font-weight: 800;
@@ -37,10 +41,12 @@
     background-color: #661e9d;
     color: #ffffff;
     border: 2px solid #111;
-    border-radius: 50px;
+    border-radius: 15px;
     text-decoration: none;
     gap: 5px;
     height: 36px;
+    box-shadow: 4px 4px 0 #1b1024;
+    white-space: nowrap;
 }
 
 .theme-button:hover {
@@ -50,16 +56,21 @@
     border: 2px solid #111;
 }
 
+
 .themes-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+    width: 100%;
+    max-width: 1180px;
+    align-self: center;
 }
 
-.themes-window-card{
+.themes-window-card {
     line-height: 1.5;
 }
 
-.theme-card-title{
+.theme-card-title {
     font-family: 'Bungee', sans-serif;
     font-size: 18px;
     color: #661e9d;
@@ -68,14 +79,14 @@
     margin-bottom: 8px;
 }
 
-.theme-card-description{
+.theme-card-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #555555;
     margin-bottom: 20px;
 }
 
-.theme-card-list{
+.theme-card-list {
     list-style: none;
     font-size: 14px;
     color: #555555;
@@ -83,15 +94,51 @@
     padding-top: 16px;
 }
 
-
-.theme-card-item{
+.theme-card-item {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #555555;
     margin-top: 5px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .theme-card-item i {
     color: #ff007b;
     margin-right: 8px;
+    margin-top: 4px;
+}
+
+@media (max-width: 980px) {
+  .themes {
+    padding: 72px 28px;
+  }
+
+  .themes-content {
+    align-items: flex-start;
+  }
+
+  .themes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .themes {
+    padding: 56px 18px;
+  }
+
+  .themes-content {
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+
+  .themes-subtitle {
+    letter-spacing: 3px;
+  }
+
+  .theme-button {
+    width: 100%;
+    justify-content: center;
+  }
 }

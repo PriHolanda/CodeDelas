@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import WindowCard from '../components/WindowCard'
 import Logo from '../assets/images/logo.png'
 
@@ -13,13 +14,13 @@ function Hero() {
                 <p className='hero-description'>O CodeDelas é uma iniciativa de extensão que aproxima meninas e mulheres da tecnologia por meio de conhecimento, representatividade e prática. Você assiste aos vídeos das convidadas e depois constrói o seu próprio projeto.</p>
 
                 <div className='hero-content-buttons'>
-                    <a className="hero-inscript-button" href="" target="_blank" rel="noreferrer">
+                    <a className="hero-inscript-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeQVCr-MbK8wlQRwILFza1Kqg7KNrivA836qImcWdqIUFp-5g/viewform?usp=sharing&ouid=110802464428585688094" target="_blank" rel="noreferrer">
                         Quero me inscrever
                     </a>
 
-                    <a className="hero-movie-button" href="" target="_blank" rel="noreferrer">
+                    <Link className="hero-movie-button" to="/meetings">
                         Assistir aos vídeos
-                    </a>
+                    </Link>
                 </div>
             </div>
 

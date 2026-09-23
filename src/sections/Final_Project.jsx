@@ -15,25 +15,25 @@ function FinalProject() {
 
                 <div className="final-project-cards">
                     <InfoCard className="final-project-info-card">
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <h4 className="final-project-card-title">Tema Livre</h4>
                         <p className="final-project-card-description">Produto digital, protótipo, aplicação ou pesquisa, você decide o foco.</p>
                     </InfoCard>
 
                     <InfoCard className="final-project-info-card">
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <h4 className="final-project-card-title">Sem pré-requisito técnico</h4>
                         <p className="final-project-card-description">O projeto pode ser entregue com qualquer nível de programação.</p>
                     </InfoCard>
 
                     <InfoCard className="final-project-info-card">
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <h4 className="final-project-card-title">Construído durante o programa</h4>
                         <p className="final-project-card-description">Desenvolvido semana a semana com o que você vai aprendendo.</p>
                     </InfoCard>
 
                     <InfoCard className="final-project-info-card">
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <h4 className="final-project-card-title">Apresentação final</h4>
                         <p className="final-project-card-description">Conheça os requisitos e as etapas para o desenvolvimento do seu projeto final.</p>
                     </InfoCard>
@@ -61,7 +61,7 @@ function FinalProject() {
 
                     <div className="item-final-project-card">
                         <span className="number-card">4</span>
-                        <span className="title-card">Apresente na cerimômia final</span>
+                        <span className="title-card">Apresente na cerimônia final</span>
                     </div>
                 </WindowCard>
             </div>

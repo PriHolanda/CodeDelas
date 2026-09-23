@@ -1,0 +1,272 @@
+.ec {
+  --ec-color: #ff1a8c;
+  --ec-tint: #ffe6f2;
+
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0 #000;
+  min-width: 0;
+}
+
+.ec-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: var(--ec-color);
+  color: #fff;
+}
+
+.ec-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.ec-dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff73;
+}
+
+.ec-file {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ec-body {
+  display: grid;
+  grid-template-columns: 100px 1fr 260px;
+  min-width: 0;
+}
+
+.ec-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ec-tint);
+  color: #fff;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.ec-main {
+  padding: 24px 28px;
+  min-width: 0;
+}
+
+.ec-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.ec-title {
+  margin: 3px 0 12px;
+  font-size: clamp(24px, 4vw, 35px);
+  color: #6a1fc2;
+  line-height: 1.15;
+}
+
+.ec-desc {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.ec-label {
+  display: block;
+  margin-bottom: 9.6px;
+  font-size: 9.6px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.ec-topics {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6px 24px;
+}
+
+.ec-topics li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: #333;
+}
+
+.ec-topics li::before {
+  content: "✓";
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #111;
+  border-radius: 4px;
+  background: var(--ec-tint);
+  color: var(--ec-color);
+  font-size: 11.2px;
+  font-weight: 900;
+}
+
+.ec-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 22px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background: var(--ec-color);
+  color: #fff;
+  font-size: 12.8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 #000;
+  transition: transform 0.12s, box-shadow 0.12s;
+  gap: 5px;
+}
+
+.ec-btn i{
+    margin-right: 7px;
+}
+
+.ec-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+
+.ec-guest {
+  border-left: 1px solid #111;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ec-photo {
+  position: relative;
+  height: 160px;
+  background: var(--ec-tint);
+}
+
+.ec-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.ec-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 11px;
+  border-radius: 12px;
+  background: var(--ec-color);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.ec-guest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px 17px;
+}
+
+.ec-role {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--ec-color);
+}
+
+.ec-name {
+  font-size: 16px;
+  color: #6a1fc2;
+}
+
+.ec-edu {
+  font-size: 12px;
+  color: #888;
+}
+
+.ec-guest-info hr {
+  width: 100%;
+  margin: 11px 0;
+  border: 0;
+  border-top: 1px solid #111;
+}
+
+.ec-theme-label {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.ec-theme {
+  font-size: 12px;
+  color: #333;
+}
+
+.ec-activity{
+    margin-bottom: 15px;
+}
+
+@media (max-width: 860px) {
+  .ec-body {
+    grid-template-columns: 1fr;
+  }
+
+  .ec-num {
+    padding: 8px;
+    font-size: 25px;
+  }
+
+  .ec-topics {
+    grid-template-columns: 1fr;
+  }
+
+  .ec-guest {
+    border-left: 0;
+    border-top: 1px solid #111;
+  }
+}
+
+@media (max-width: 520px) {
+  .ec {
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .ec-bar {
+    gap: 10px;
+    padding: 8px 12px;
+  }
+
+  .ec-main {
+    padding: 20px 18px;
+  }
+
+  .ec-btn {
+    width: 100%;
+  }
+
+  .ec-photo {
+    height: 210px;
+  }
+}

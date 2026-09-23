@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .sponsors-title{
@@ -25,7 +26,7 @@
 
 .sponsors-heading {
     font-family: 'Bungee', sans-serif;
-    font-size: 40px;
+    font-size: clamp(30px, 4vw, 40px);
     color: #661e9d;
     text-transform: uppercase;
     font-weight: 800;
@@ -33,19 +34,73 @@
 }
 
 .sponsors-container {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 360px));
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 820px;
 }
 
 .sponsors-card {
-    padding: 11px;
+    align-items: center;
+    justify-content: center;
+    min-height: 170px;
+    padding: 28px 32px;
+    width: 100%;
 }
 
 .sponsors-logo {
-    width: 200px;
-    height: auto;;
+    width: 100%;
+    max-width: 260px;
+    max-height: 110px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@media (min-width: 1280px) {
+  .sponsors-container {
+    max-width: 920px;
+    grid-template-columns: repeat(2, minmax(320px, 420px));
+    gap: 28px;
+  }
+
+  .sponsors-card {
+    min-height: 190px;
+    padding: 32px 40px;
+  }
+
+  .sponsors-logo {
+    max-width: 300px;
+    max-height: 125px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sponsors {
+    padding: 56px 18px;
+  }
+
+  .sponsors-container {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    gap: 18px;
+  }
+
+  .sponsors-card {
+    min-height: 132px;
+    padding: 22px 24px;
+  }
+
+  .sponsors-logo {
+    max-width: 240px;
+    max-height: 90px;
+  }
+
+  .sponsors-title,
+  .organizers-title {
+    letter-spacing: 3px;
+  }
 }

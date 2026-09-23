@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom'
 import '../styles/footer.css'
 
-function Footer() {
+function Footer({ showMeetingsLink = true }) {
     return (
         <footer className='footer'>
-            {/* <div className="footer-container"> */}
                 <h1 className="footer-name">CODEDELAS</h1>
                 <p className='footer-copyright'>PET-SI · UFC Quixadá — © 2026 CodeDelas. Todos os direitos reservados.</p>
-                <a className="footer-button" href="" target="_blank" rel="noreferrer">
-                   Ver encontros
-                   <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-            {/* </div> */}
+                {showMeetingsLink && (
+                    <Link className="footer-button" to="/meetings">
+                       Ver encontros
+                       <i className="fa-solid fa-arrow-right-long"></i>
+                    </Link>
+                )}
         </footer>
     )
 }

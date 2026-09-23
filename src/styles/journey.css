@@ -12,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
+    max-width: 900px;
 }
 
 .journey-title {
@@ -24,10 +26,11 @@
 
 .journey-heading {
     font-family: 'Bungee', sans-serif;
-    font-size: 36px;
+    font-size: clamp(30px, 4vw, 36px);
     color: #661e9d;
     text-transform: uppercase;
     font-weight: 800;
+    text-align: center;
 }
 
 .journey-description {
@@ -35,13 +38,17 @@
     font-size: 16px;
     color: #605a6c;
     text-align: center;
-    padding: 0 112px;
+    max-width: 680px;
+    line-height: 1.6;
 }
 
 .journey-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
     margin-top: 40px;
+    width: 100%;
+    max-width: 1180px;
 }
 
 .journey-info-card{
@@ -68,6 +75,33 @@
     color: #605a6c;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    line-height: 1.5;
     
+}
+
+@media (max-width: 1120px) {
+  .journey-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .journey {
+    padding: 64px 24px;
+  }
+
+  .journey-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .journey {
+    padding: 56px 18px;
+  }
+
+  .journey-title {
+    letter-spacing: 3px;
+  }
 }
 

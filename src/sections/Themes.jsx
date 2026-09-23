@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import WindowCard from '../components/WindowCard'
 import '../styles/themes.css'
 
@@ -10,10 +11,10 @@ function Themes() {
                     <h1 className="themes-title">Temas</h1>
                 </div>
 
-                 <a className="theme-button" href="" target="_blank" rel="noreferrer">
+                 <Link className="theme-button" to="/meetings">
                    Ver todos os encontros
-                   <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+                  <i className="fa-solid fa-arrow-right-long"></i>
+                </Link>
             </div>
 
             <div className="themes-container">
@@ -22,9 +23,9 @@ function Themes() {
                     <p className="theme-card-description">Como observar problemas do dia a dia, entender suas causas e identificar oportunidades para criar soluções.</p>
 
                     <ul className="theme-card-list"> Você vai aprender:
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Identificação e definição de problemas</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Análise de causas e necessidades</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Levantamento de requisitos</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Identificação e definição de problemas</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Análise de causas e necessidades</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Levantamento de requisitos</li>
                     </ul>
                 </WindowCard>
 
@@ -33,9 +34,9 @@ function Themes() {
                     <p className="theme-card-description">Como transformar uma ideia em uma aplicação web e conhecer as principais tecnologias por trás da web.</p>
 
                     <ul className="theme-card-list"> Você vai aprender:
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>HTML</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>CSS</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>APIs e bancos de dados</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>HTML</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>CSS</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>APIs e bancos de dados</li>
                     </ul>
                 </WindowCard>
 
@@ -44,9 +45,9 @@ function Themes() {
                     <p className="theme-card-description">Como conectar diferentes partes de uma aplicação e colocá-la no ar para que possam ser utilizadas.</p>
 
                     <ul className="theme-card-list"> Você vai aprender:
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Integração de sistemas</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Deploy e hospedagem</li>
-                        <li className="theme-card-item"><i class="fa-solid fa-caret-right"></i>Git e GitHub</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Integração de sistemas</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Deploy e hospedagem</li>
+                        <li className="theme-card-item"><i className="fa-solid fa-caret-right"></i>Git e GitHub</li>
                     </ul>
                 </WindowCard>
             </div>

@@ -1,0 +1,338 @@
+.mh {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  border-bottom: 2.5px solid #111111;
+}
+
+.mh-inner {
+  padding: 12px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* logo */
+.mh-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.mh-logo {
+  display: block;
+  height: 48px;
+  object-fit: cover;
+}
+
+.mh-name {
+  color: #661e9d;
+  font-size: 19px;
+  font-family: "Bungee", sans-serif;
+  font-weight: 800;
+}
+
+/* itens da direita, com divisórias */
+.mh-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.mh-item-enconters {
+  padding: 16px 18px;
+  border-left: 2px solid #d4d4d8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6B1DC8;
+  font-family: 'Bungee', sans-serif;
+}
+
+.mh-item-institution {
+  padding: 15px 18px;
+  border-left: 2px solid #d4d4d8;
+  border-right: 2px solid #d4d4d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999;
+  font-family: 'Bungee', sans-serif;
+  margin-right: 14px;
+}
+
+.mh-item-tam {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: #e6136f;
+  font-family: 'Bungee', sans-serif;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.encounters-hero {
+  display: flex;
+  padding: 40px 90px;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  /* background: 
+    radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    ),
+    repeating-conic-gradient(
+      from 0deg at 50% 50%,
+      #b02df5 0deg 5deg,    
+      #c44eff 5deg 10deg   
+    ); */
+
+  background-color: #FFD6E8;
+  border-bottom: 2.5px solid #111111;
+}
+
+.encounters-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 760px;
+}
+
+.encounters-back {
+  color: #6B1DC8;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.encounters-hero-title {
+  color: #6B1DC8;
+  font-size: clamp(42px, 6vw, 60px);
+  font-family: "Bungee", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.encounters-hero-description {
+  color: #444;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+
+}
+
+.encounters-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.card-encounters-hero {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  min-width: 135px;
+}
+
+.card-title-hero {
+  font-size: 26px;
+  color: #E8106C;
+  font-family: "Bungee", sans-serif;
+  font-weight: 800;
+}
+
+.card-title-hero-middle {
+  font-size: 26px;
+  color: #6B1DC8;
+  font-family: "Bungee", sans-serif;
+  font-weight: 800;
+}
+
+.card-subtitle-hero {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  letter-spacing: 1.6px;
+
+}
+
+.encounters-list {
+  padding: 40px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hb-wrap {
+  padding: 8px 90px;
+}
+
+.hb {
+  padding: 19.2px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row;
+}
+
+.hb-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hb-text {
+  flex: 1;
+}
+
+.hb-title {
+  display: block;
+  color: #6a1fc2;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.hb-desc {
+  margin: 2.4px 0 0;
+  font-size: 13.6px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.hb-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hb-link--pink {
+  color: #e6136f;
+}
+
+.hb-link--purple {
+  color: #6a1fc2;
+}
+
+.hb-btn {
+  padding: 11px 22px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  color: #111;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 3px 3px 0 #000;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.hb-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+
+@media (max-width: 980px) {
+  .mh-inner,
+  .encounters-hero,
+  .encounters-list,
+  .hb-wrap {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .encounters-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .encounters-container {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .mh-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .mh-nav {
+    justify-content: flex-start;
+  }
+
+  .mh-item-enconters,
+  .mh-item-institution {
+    padding: 8px 10px;
+  }
+
+  .encounters-hero-description br {
+    display: none;
+  }
+
+  .hb {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hb-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .mh-inner,
+  .encounters-hero,
+  .encounters-list,
+  .hb-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .mh-name {
+    font-size: 16px;
+  }
+
+  .mh-logo {
+    height: 40px;
+  }
+
+  .mh-item-institution {
+    display: none;
+  }
+
+  .encounters-hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .encounters-container,
+  .card-encounters-hero {
+    width: 100%;
+  }
+}

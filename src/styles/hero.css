@@ -19,14 +19,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 96px 45px 0;
+  gap: 48px;
+  padding: 120px 45px 48px;
   border-bottom: 2.5px solid #111111;
 }
 
 .hero-content {
   color: #ffffff;
   padding: 0 20px;
-
+  flex: 1 1 520px;
+  max-width: 760px;
 }
 
 .hero-title {
@@ -39,12 +41,13 @@
 
 .hero-heading {
   color: #faf5e6;
-  font-size: 72px;
+  font-size: clamp(38px, 6vw, 72px);
   font-family: "Bungee", sans-serif;
   font-weight: 800;
   text-shadow: 3px 3px 0px #0c0b1a;
   text-transform: uppercase;
   margin-top: 10px;
+  line-height: 1.05;
 }
 
 .hero-description {
@@ -52,6 +55,8 @@
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   margin: 10px 0px;
+  line-height: 1.6;
+  max-width: 680px;
 }
 
 .hero-content-buttons {
@@ -78,6 +83,11 @@
   text-decoration: none;
   box-shadow: 4px 4px 0 #1b1024;
   cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.hero-inscript-button:hover {
+  transform: scale(1.05);
 }
 
 .hero-movie-button {
@@ -95,6 +105,11 @@
   text-decoration: none;
   box-shadow: 4px 4px 0 #1b1024;
   cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.hero-movie-button:hover {
+  transform: scale(1.05);
 }
 
 .hero-card-content {
@@ -105,9 +120,9 @@
 }
 
 .hero-mascot-img {
-  width: 227px;
+  width: min(227px, 70vw);
   height: auto;
-  margin: 0 124px;
+  margin: 0 auto;
 }
 
 .hero-card-content h3 {
@@ -125,4 +140,61 @@
 
 .hero .window-card {
   transform: rotate(+2deg);
+}
+
+#hero-card-container {
+  flex: 0 1 480px;
+  max-width: 480px;
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 112px 28px 64px;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero .window-card {
+    transform: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 96px 18px 48px;
+  }
+
+  .hero-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-content-buttons,
+  .hero-inscript-button,
+  .hero-movie-button {
+    width: 100%;
+  }
+
+  .hero-inscript-button,
+  .hero-movie-button {
+    padding: 14px 16px;
+  }
 }

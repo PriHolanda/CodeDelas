@@ -7,4 +7,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 0;
+    transition: transform 0.4s ease;
+}
+
+@media (max-width: 560px) {
+  .info-card {
+    box-shadow: 4px 4px 0px #111111;
+  }
+}
+
+.info-card:hover {
+    transform: scale(1.023);
 }
