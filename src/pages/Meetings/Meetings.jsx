@@ -103,7 +103,7 @@ function Meetings() {
                             </div>
 
                             <a href="mailto:petufc.quixada@gmail.com" className="hb-btn">
-                                Falar com a gente
+                                Fale com a gente
                             </a>
 
                         </InfoCard>

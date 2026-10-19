@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-    gap: 20px;
 }
 
 .footer-name {
@@ -18,7 +17,6 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     color: #999;
-    text-align: center;
 
 }
 
@@ -32,7 +30,6 @@
     align-items: flex-end;
     cursor: pointer;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 .footer-button:hover{
@@ -40,10 +37,44 @@
 
 }
 
-@media (max-width: 720px) {
-  .footer {
+.footer {
     flex-direction: column;
-    padding: 28px 18px;
+    gap: 12px;
+    padding: 24px 16px;
     text-align: center;
-  }
+}
+
+.footer-name {
+    font-size: 17px;
+}
+
+.footer-copyright {
+    line-height: 1.5;
+}
+
+@media (min-width: 760px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 28px 36px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1020px) {
+    .footer {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        padding: 32px 48px;
+    }
+
+    .footer {
+        padding-right: max(92px, calc((100vw - 1600px) / 2));
+        padding-left: max(92px, calc((100vw - 1600px) / 2));
+    }
 }

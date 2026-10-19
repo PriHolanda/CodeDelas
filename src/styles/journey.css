@@ -12,8 +12,6 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
-    max-width: 900px;
 }
 
 .journey-title {
@@ -26,11 +24,10 @@
 
 .journey-heading {
     font-family: 'Bungee', sans-serif;
-    font-size: clamp(30px, 4vw, 36px);
+    font-size: 36px;
     color: #661e9d;
     text-transform: uppercase;
     font-weight: 800;
-    text-align: center;
 }
 
 .journey-description {
@@ -38,17 +35,13 @@
     font-size: 16px;
     color: #605a6c;
     text-align: center;
-    max-width: 680px;
-    line-height: 1.6;
+    padding: 0 112px;
 }
 
 .journey-container {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    display: flex;
     gap: 20px;
     margin-top: 40px;
-    width: 100%;
-    max-width: 1180px;
 }
 
 .journey-info-card{
@@ -75,33 +68,92 @@
     color: #605a6c;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    line-height: 1.5;
     
 }
 
-@media (max-width: 1120px) {
-  .journey-container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.journey {
+    padding: 52px 18px;
 }
 
-@media (max-width: 760px) {
-  .journey {
-    padding: 64px 24px;
-  }
-
-  .journey-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 520px) {
-  .journey {
-    padding: 56px 18px;
-  }
-
-  .journey-title {
+.journey-title {
+    font-size: 11px;
     letter-spacing: 3px;
-  }
 }
 
+.journey-heading {
+    font-size: 27px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.journey-description {
+    padding: 0;
+    line-height: 1.65;
+}
+
+.journey-content {
+    width: 100%;
+    text-align: center;
+}
+
+.journey-container {
+    width: 100%;
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+}
+
+.journey-info-card {
+    min-width: 0;
+}
+
+@media (min-width: 420px) {
+    .journey {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 760px) {
+    .journey {
+        padding: 64px 36px;
+    }
+
+    .journey-heading {
+        font-size: 32px;
+    }
+
+    .journey-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1020px) {
+    .journey {
+        padding: 72px 48px;
+    }
+
+    .journey-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1440px) {
+    .journey {
+        padding: 80px 92px;
+    }
+
+    .journey-heading {
+        font-size: 36px;
+    }
+
+    .journey-container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .journey {
+        padding-right: max(92px, calc((100vw - 1600px) / 2));
+        padding-left: max(92px, calc((100vw - 1600px) / 2));
+    }
+}

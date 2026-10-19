@@ -1,6 +1,7 @@
-import InfoCard from '../components/InfoCard';
-import HeavyConnect from '../assets/heavyconnect.png';
-import LinkCE from '../assets/linkce.png';
+import HeavyConnect from '../assets/images/heavyconnect.png';
+import LinkCE from '../assets/images/linkce.png';
+import Santher from '../assets/images/logo-santher.png';
+import Solfy from '../assets/images/logo-solfy.svg';
 import '../styles/sponsors.css';
 function Sponsors() {
     return (
@@ -11,13 +12,10 @@ function Sponsors() {
             </div>
 
             <div className="sponsors-container">
-                <InfoCard className='sponsors-card'>
-                    <img src={HeavyConnect} alt="Logo Heavy Connect" className="sponsors-logo" />
-
-                </InfoCard>
-                <InfoCard className='sponsors-card'>
-                    <img src={LinkCE} alt="Logo Heavy Connect" className="sponsors-logo" />
-                </InfoCard>
+                <img src={HeavyConnect} alt="Logo Heavy Connect" className="sponsors-logo" />
+                <img src={LinkCE} alt="Logo LinkCe" className="sponsors-logo" />
+                <img src={Santher} alt="Logo Santher" className="sponsors-logo" />
+                <img src={Solfy} alt="Logo Solfy" className="sponsors-logo" />
             </div>
         </section>
     )

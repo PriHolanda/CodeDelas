@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 45px;
     border-bottom: 2.5px solid #111111;
-    background-color: #ffdbec;
-    gap: 40px;
+    background-color: #ffffff;
+    padding: 52px 18px;
+    gap: 24px;
 }
 
 .sponsors-content {
@@ -13,7 +13,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .sponsors-title{
@@ -21,12 +20,12 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #ff007b;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .sponsors-heading {
     font-family: 'Bungee', sans-serif;
-    font-size: clamp(30px, 4vw, 40px);
+    /* font-size: 40px; */
     color: #661e9d;
     text-transform: uppercase;
     font-weight: 800;
@@ -34,73 +33,52 @@
 }
 
 .sponsors-container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(260px, 360px));
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 820px;
-}
-
-.sponsors-card {
-    align-items: center;
-    justify-content: center;
-    min-height: 170px;
-    padding: 28px 32px;
-    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .sponsors-logo {
-    width: 100%;
-    max-width: 260px;
-    max-height: 110px;
+    width: 200px;
     height: auto;
-    object-fit: contain;
-    display: block;
+    transition: 0.3s ease;
 }
 
-@media (min-width: 1280px) {
-  .sponsors-container {
-    max-width: 920px;
-    grid-template-columns: repeat(2, minmax(320px, 420px));
-    gap: 28px;
-  }
-
-  .sponsors-card {
-    min-height: 190px;
-    padding: 32px 40px;
-  }
-
-  .sponsors-logo {
-    max-width: 300px;
-    max-height: 125px;
-  }
+.sponsors-logo:hover{
+    transform: scale(1.05);
 }
 
-@media (max-width: 560px) {
-  .sponsors {
-    padding: 56px 18px;
-  }
-
-  .sponsors-container {
-    grid-template-columns: 1fr;
-    max-width: 340px;
-    gap: 18px;
-  }
-
-  .sponsors-card {
-    min-height: 132px;
-    padding: 22px 24px;
-  }
-
-  .sponsors-logo {
-    max-width: 240px;
-    max-height: 90px;
-  }
-
-  .sponsors-title,
-  .organizers-title {
-    letter-spacing: 3px;
-  }
+@media (min-width: 420px) {
+    .sponsors {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
 }
+
+@media (min-width: 760px) {
+    .sponsors {
+        padding: 64px 36px;
+    }
+
+    .sponsors-heading {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sponsors {
+        padding: 80px 92px;
+    }
+
+    .sponsors-heading {
+        font-size: 40px;
+    }
+
+    .sponsors {
+        padding-right: max(92px, calc((100vw - 1600px) / 2));
+        padding-left: max(92px, calc((100vw - 1600px) / 2));
+    }
+}
+

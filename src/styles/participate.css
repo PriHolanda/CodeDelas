@@ -1,24 +1,22 @@
-.participate {
+.participate{
     background-color: #44006e;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 112px 45px;
+    padding: 112px;
     border-bottom: 2.5px solid #111111;
 }
 
-.participate-content {
+.participate-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    max-width: 980px;
-    width: 100%;
 }
 
-.participate-heading {
+.participate-heading{
     font-family: 'Bungee', sans-serif;
-    font-size: clamp(40px, 7vw, 60px);
+    font-size: 60px;
     color: #faf5e6;
     text-transform: uppercase;
     font-weight: 900;
@@ -28,13 +26,12 @@
     margin-bottom: 24px;
 }
 
-.participate-description {
+.participate-description{
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 16px;
+    margin: 0 48px 16px;
     color: #ffffff85;
     text-align: center;
-    line-height: 1.6;
 }
 
 .participate-button {
@@ -42,72 +39,146 @@
     align-items: center;
     justify-content: center;
     padding: 16px 40px;
-    border: 3px solid #1b1024;
+    border: 3px solid #ffffff;
     border-radius: 30px;
-    background: #ff007b;
-    color: #FFFFFF;
+    background: #e8106c;
+    color: white;
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 4px 4px 0 #1b1024;
+    box-shadow: #ffffff4d 5px 5px 0px;
     cursor: pointer;
     margin-top: 20px;
-    transition: transform 0.4s ease;
-    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.participate-button:hover {
-    transform: scale(1.03);
+.participate-button:hover{
+    transform: scale(1.02);
 }
 
-.participate-social {
+.participate-social{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    gap: 15px;   
     margin-top: 48px;
     border-top: #ffffff3d 1px solid;
-    padding: 32px 0;
-    width: min(100%, 760px);
+    padding: 32px 100px;
 }
 
-.participate-title {
+.participate-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #ffffff85;
 }
 
-.participate-media {
-    font-family: 'Montserrat', sans-serif;
+.participate-media{
+     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #ffffff85;
     font-weight: 600;
     text-decoration: none;
 }
 
-.participate-icon {
-    width: min(200px, 70vw);
+.participate-icon{
+    width: 200px;
 }
 
-@media (max-width: 640px) {
-  .participate {
-    padding: 72px 18px;
-  }
+.participate {
+    padding: 52px 18px;
+}
 
-  .participate-description br {
-    display: none;
-  }
+.participate-heading {
+    font-size: 38px;
+}
 
-  .participate-button {
-    width: 100%;
-    padding: 15px 18px;
-    font-size: 14px;
-    border-radius: 18px;
-  }
-
-  .participate-title,
-  .participate-media {
+.participate-description {
+    margin: 0 0 16px;
     font-size: 15px;
-  }
+    line-height: 1.6;
+}
+
+.participate-button {
+    max-width: 100%;
+    padding: 14px 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.participate-social {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 16px;
+    margin-top: 32px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.participate-title,
+.participate-media {
+    font-size: 14px;
+}
+
+.participate-icon {
+    width: min(100%, 150px);
+}
+
+@media (min-width: 420px) {
+    .participate {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .participate-heading {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 760px) {
+    .participate {
+        padding: 72px 36px;
+    }
+
+    .participate-heading {
+        font-size: 52px;
+    }
+
+    .participate-description {
+        max-width: 680px;
+    }
+
+    .participate-social {
+        width: auto;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .participate {
+        padding: 88px 48px;
+    }
+
+    .participate-heading {
+        font-size: 58px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .participate {
+        padding: 112px 92px;
+    }
+
+    .participate-heading {
+        font-size: 60px;
+    }
+
+    .participate-description {
+        font-size: 18px;
+    }
+
+    .participate {
+        padding-right: max(92px, calc((100vw - 1600px) / 2));
+        padding-left: max(92px, calc((100vw - 1600px) / 2));
+    }
 }
